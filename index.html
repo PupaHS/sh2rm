@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мой бренд — ссылки</title>
+  <meta name="description" content="Одежда, донаты и поддержка бренда">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      background: #111;
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+    .card { width: 100%; max-width: 420px; text-align: center; }
+    .avatar {
+      width: 96px; height: 96px; border-radius: 50%;
+      background: #333; margin: 0 auto 16px;
+      background-size: cover; background-position: center;
+      /* background-image: url('avatar.jpg'); */
+    }
+    h1 { font-size: 22px; margin-bottom: 6px; }
+    p.sub { color: #888; font-size: 14px; margin-bottom: 28px; }
+    a.link {
+      display: block;
+      padding: 16px;
+      margin-bottom: 12px;
+      border-radius: 12px;
+      background: #1e1e1e;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      transition: transform .15s, background .15s;
+    }
+    a.link:hover { background: #2a2a2a; transform: translateY(-2px); }
+    a.donate { background: #ffdd00; color: #000; }
+    a.boosty { background: #f15f2c; }
+    a.shop   { background: #2b6cff; }
+    footer {
+      margin-top: 24px;
+      font-size: 11px;
+      color: #666;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="avatar"></div>
+    <h1>Название бренда</h1>
+    <p class="sub">Одежда · Донаты · Поддержка</p>
+
+    <a class="link donate" href="ССЫЛКА_ЯНДЕКС_ДОНАТЫ" target="_blank" rel="noopener">
+      💛 Поддержать (Яндекс Донаты)
+    </a>
+
+    <a class="link boosty" href="ССЫЛКА_BOOSTY" target="_blank" rel="noopener">
+      🔥 Boosty
+    </a>
+
+    <a class="link shop" href="ССЫЛКА_ОПЛАТА_ИП" target="_blank" rel="noopener">
+      🛍 Купить одежду (оплата через ИП)
+    </a>
+
+    <footer>
+      ИП Иванов Иван Иванович<br>
+      ИНН 000000000000 · ОГРНИП 000000000000000
+    </footer>
+  </div>
+</body>
+</html>
